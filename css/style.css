@@ -1,0 +1,288 @@
+*{
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	box-sizing: border-box;
+	font-family: 'Josefin Sans', sans-serif;
+}
+ul, ol{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+html{
+	scroll-behavior: smooth;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+.problem{
+	clear: both;
+}
+/*nav-bar start*/
+#nav-bar{
+	text-align: center;
+	background-color: black;
+}
+.logo{
+	width: 10%;
+	float: left;
+}
+.logo img{
+	width: 50px;
+}
+.menu{
+	width: 90%;
+	float: left;
+}
+.menu ul{
+	float: right;
+}
+.menu ul li{
+	float: left;
+	padding: 20px 20px;
+	transition: all linear .3s;
+}
+.menu ul li:hover{
+	background-color: white;
+	transition: all linear .3s;
+}
+.menu ul li a{
+	color: orange;
+	text-transform: capitalize;
+	font-size: 18px;
+}
+/*nav-bar end*/
+
+/*banner part start*/
+#banner{
+	background: url(../images/banner2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.banner-overlay{
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 150px 0;
+}
+.banner-content h1{
+	color: white;
+	font-size: 60px;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+.banner-content h4{
+	color: orange;
+	font-size: 40px;
+	text-transform: uppercase;
+	padding-bottom: 40px;
+}
+.banner-content a{
+	padding: 12px 30px;
+	background-color: white;
+	color: #4A2415;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 30px;
+	transition: all linear .3s;
+}
+.banner-content:hover a{
+	background-color: orange;
+	color: white;
+	transition: all linear .3s;
+}
+/*banner part end*/
+
+/*about part start*/
+#about{
+	padding: 40px 0;
+}
+.common-heading h4{
+	text-align: center;
+	margin: 40px 0;
+	background-color: black;
+	color: orange;
+	padding: 15px 0;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 5px;
+}
+.about-img{
+	width: 48%;
+	float: left;
+	margin-right: 2%;
+}
+.about-img img{
+	width: 100%;
+}
+.about-content{
+	width: 50%;
+	float: left;
+	padding-top: 30px;
+}
+.about-content h4{
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+.about-content p{
+	text-align: justify;
+	line-height: 22px;
+}
+/*about part end*/
+
+/*gallery part start*/
+#gallery{
+	padding: 60px 0;
+}
+.gallery-img{
+	width: 32%;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.gallery-img:hover img{
+	transform: scale(1.1);
+	transition: all linear .3s;
+}
+.gallery-img img{
+	width: 100%;
+	transition: all linear .3s;
+}
+.gallery-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: scale(0);
+	transition: all linear .3s;
+}
+.gallery-overlay a{
+	color: orange;
+	height: 50px;
+	width: 50px;
+	background-color: white;
+	line-height: 50px;
+	text-align: center;
+	font-size: 30px;
+	border-radius: 10px;
+	display: block;
+}
+.gallery-img:hover .gallery-overlay{
+	transform: scale(1);
+	transition: all linear .3s;
+}
+.gallery-middle{
+	margin: 0 2%;
+}
+/*gallery part end*/
+
+/*service part start*/
+#service{
+	padding-bottom: 30px;
+}
+.service-content{
+	width: 20%;
+	float: left;
+	text-align: center;
+	background-color: #f1f1f1;
+	padding: 22px 22px 30px;
+	border-radius: 5px;
+	margin: 0 1%;
+}
+.service-content:hover{
+	box-shadow: 1px 1px 15px black;
+	transition: all linear .3s;
+}
+.service-content .icon{
+	height: 40px;
+	width: 50px;
+	border: 2px solid black;
+	display: block;
+	margin: 0 auto;
+	line-height: 40px;
+	color: black;
+	border-radius: 10px;
+	transition: all linear .3s;
+}
+.service-content:hover .icon{
+	background-color: black;
+	color: white;
+	transition: all linear .3s;
+}
+.service-content h4{
+	padding: 10px 0;
+	text-transform: capitalize;
+	color: orange;
+	font-size: 18px;
+}
+.service-content p{
+	text-align: justify;
+	line-height: 20px;
+	padding-bottom: 30px;
+}
+.service-content .read-btn a{
+	padding: 10px 30px;
+	background-color: black;
+	color: orange;
+	border-radius: 30px;
+	text-transform: capitalize;
+	transition: all linear .3s;
+}
+.read-btn:hover a{
+	background-color: orange;
+	color: black;
+	transition: all linear .3s;
+}
+.gap{
+	margin-right: 5%;
+}
+/*service part end*/
+
+/*product part start*/
+#product{
+	padding-bottom: 40px;
+}
+.text{
+	text-align: justify;
+}
+/*product part end*/
+
+/*contact part start*/
+#contact{
+	padding-bottom: 40px;
+}
+.text{
+	text-align: justify;
+}
+/*contact part end*/
+
+/*footer part start*/
+#footer{
+	background-color: black;
+	text-transform: capitalize;
+	height: 100px;
+	line-height: 100px;
+}
+.footer-content p{
+	text-align: center;
+	color: white;
+}
+.footer-content a{
+	color: orange;
+	transition: all linear .3s;
+}
+.footer-content:hover a{
+	color: white;
+	transition: all linear .3s;
+}
+/*footer part end*/
